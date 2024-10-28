@@ -426,7 +426,7 @@ public final class MassStorageSession {
             }
             // Return category members if arg is (part of) a category
             for (StorableCategory cat : StorableCategory.values()) {
-                if (cat.name().toLowerCase().contains(lower) && cat.getStorables().contains(storable)) {
+                if (cat.getName().toLowerCase().contains(lower) && cat.getStorables().contains(storable)) {
                     result.add(storable);
                     break;
                 }
